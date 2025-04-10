@@ -1,0 +1,22 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+if __name__ == '__main__':
+    n = int(input().strip())
+    state = True
+    if n % 2 == 1:
+        state = True
+    elif n %2 ==0 and 2<n<5:
+        state = False
+    elif n %2 ==0 and 6<n<20:
+        state = True
+    elif n %2 ==0 and n>20:
+        state = False
+    if state:
+        print("Weird")
+    if not state:
+        print("Not Weird")
